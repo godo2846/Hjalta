@@ -1,0 +1,270 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hjalta Fitness & Wellbeing</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./assets/img/full color 1.svg" type="image/x-icon">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/77b2e03443.js" crossorigin="anonymous"></script>
+</head>
+<body style="background-color: #F6F4E6 ;">
+  <div class="wrapper">
+    <header class="hjalta-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/img/H full color .png" alt="Hjalta Logo" class="hjalta-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./packages.html">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./trainers.html">Gallery & Trainers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<!-- FORMULARIO DE CONTACTO -->
+<main class="contact-section" style="background-color: #F6F4E6;">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="p-4 p-md-5 rounded-4 shadow-sm" style="background-color: white; border-left: 5px solid #EFB90A;">
+
+          <!-- ENCABEZADO -->
+          <h1 class="display-5 fw-bold mb-3" style="color: #52575D;">Let’s Talk,</h1>
+          <p class="fs-4 fw-semibold mb-2" style="color: #52575D;">Hjalta team is here to support you!</p>
+          <p style="color: #52575D;">
+            Whether you’re ready to begin or just curious, we’re here to listen.
+            <br><strong>No pressure. No stress.</strong> Just a real conversation about how we can help you feel stronger inside and out.
+          </p>
+
+          <!-- OPCIONES DE CONTACTO -->
+          <div class="row mt-4">
+            <div class="col-md-6 mb-4">
+              <h5 class="fw-bold" style="color: #52575D;">🧭 Need help choosing a program?</h5>
+              <p style="color: #52575D;">We’ll guide you based on your goals, schedule, and lifestyle. Start with a free discovery call.</p>
+            
+            </div>
+            <div class="col-md-6 mb-4">
+              <h5 class="fw-bold" style="color: #52575D;">💬 Prefer to message us?</h5>
+              <p style="color: #52575D;">We’re just an email or message away. Ask anything — we love questions.</p>
+              <p style="color: #52575D;">
+                📧 <a href="mailto:info@hjalta.com" style="color: #52575D;">info@hjalta.com</a><br>
+                📞 You’ll also be able to leave a message after booking.<br>
+                📍 Based in the UAE. Training wherever you are.
+              </p>
+            </div>
+          </div>
+
+          <!-- FORMULARIO -->
+          <h4 class="fw-bold mt-4 mb-3" style="color: #52575D;">📩 Contact us!</h4>
+          <p style="color: #52575D;">Tell us what you’re looking for...</p>
+
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control py-3" name="name" placeholder="Full Name" required
+                  style="border-color: #52575D; background-color: #F6F4E6;">
+              </div>
+              <div class="col-md-6">
+                <input type="tel" class="form-control py-3" name="phone" placeholder="Phone Number" required
+                  style="border-color: #52575D; background-color: #F6F4E6;">
+              </div>
+            </div>
+
+            <div class="row g-3 mt-2">
+              <div class="col-md-6">
+                <input type="email" class="form-control py-3" name="email" placeholder="Email Address" required
+                  style="border-color: #52575D; background-color: #F6F4E6;">
+              </div>
+              <div class="col-md-3">
+                <select name="gender" class="form-select py-3" required style="border-color: #52575D; background-color: #F6F4E6;">
+                  <option value="">Gender</option>
+                  <option value="Female">Female</option>
+                  <option value="Male">Male</option>
+            
+                </select>
+              </div>
+              <div class="col-md-3">
+                <select name="goal" class="form-select py-3" required style="border-color: #52575D; background-color: #F6F4E6;">
+                  <option value="">Your Goal</option>
+                  <option value="Weight Loss">Weight Loss</option>
+                  <option value="Build Muscle">Build Muscle</option>
+                  <option value="Improve Mobility">Improve Mobility</option>
+                  <option value="Feel Better">Feel Better</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mt-3">
+              <select name="support" class="form-select py-3" required style="border-color: #52575D; background-color: #F6F4E6;">
+                <option value="">What do you want support with?</option>
+                <option value="Training">Training</option>
+                <option value="Stress">Stress</option>
+                <option value="Mobility">Mobility</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="mt-3 mb-3">
+              <textarea name="message" rows="5" class="form-control" placeholder="Your Message" required
+                style="border-color: #52575D; background-color: #F6F4E6;"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-lg w-100 py-3 fw-bold" style="background-color: #EFB90A; color: #52575D; border: none;">
+              Send
+            </button>
+          </form>
+
+          <p class="mt-4 text-center" style="color: #52575D; font-style: italic;">
+            We’ll get back to you within 24 hours. Your time — and energy — is sacred to us.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- MODAL DE GRACIAS -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: #F6F4E6; border: 2px solid #EFB90A;">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="thankYouModalLabel" style="color: #52575D;">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="color: #52575D;">
+        We’ll get back to you within 24 hours. Your time — and energy — is sacred to us.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn fw-bold" style="background-color: #EFB90A; color: #52575D;" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT DE ENVÍO -->
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://formsubmit.co/ajax/info@hjalta.com", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        thankYouModal.show();
+
+        document.getElementById('contactForm').reset();
+
+        document.getElementById('thankYouModal').addEventListener('hidden.bs.modal', () => {
+          window.location.href = "index.html";
+        });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("There was a problem submitting your message.");
+    });
+  });
+</script>
+
+
+
+<footer class="hjalta-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="./assets/img/H full color .png" alt="Hjalta Logo" class="footer-logo mb-3">
+                    <p class="footer-text">Where Minds Align with Muscle</p>
+                   
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="footer-heading">Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-envelope-fill"></i>info@hjalta.com</li>
+                        <li><i class="bi bi-telephone-fill"></i> +971 50 748 7946</li>
+                        <li><i class="bi bi-geo-alt-fill"></i> Based in the UAE. Training wherever you are.</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4">
+                    <h3 class="footer-heading">Follow Us!</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61577137808840" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/hjalta.fw/" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/971507487946" class="social-icon"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                    
+                    <div class="app-download mt-3">
+                        <p class="download-text">Download our partner app:</p>
+                        <div class="download-buttons">
+                            <a href="https://apps.apple.com/ae/app/mindbody-fitness-wellness/id689501356" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="download-btn">
+                                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+                            </a>
+                            <a href="https://play.google.com/store/apps/details?id=com.mindbodyonline.connect&pcampaignid=web_share" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            class="download-btn">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+            
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 Hjalta Fitness & Wellbeing LLE. All rights reserved.</p>
+                 <div class="mt-4 mt-lg-0">
+                   
+                  <div class="copyright">
+                        <p class="mb-0">By using this site, you agree to our 
+                            <a href="./terms.html" class="text-decoration-none" style="color: #EFB90A;">Terms of Service</a> 
+                            and 
+                            <a href="./privacy.html" class="text-decoration-none" style="color: #EFB90A;">Privacy Policy</a>.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
