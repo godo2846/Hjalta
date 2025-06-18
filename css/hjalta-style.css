@@ -1,0 +1,100 @@
+
+:root {
+  --hjalta-dark: #52575D;
+  --hjalta-gold: #EFB90A;
+  --hjalta-cream: #F6F4E6;
+  --hjalta-black: #2b2e31;
+  --hjalta-white: #ffffff;
+}
+
+body {
+  background-color: var(--hjalta-cream);
+  color: var(--hjalta-dark);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero-tagline {
+  position: relative;
+  top: -40px;
+  font-size: 1.25rem;
+  color: var(--hjalta-gold);
+  font-weight: bold;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.btn-cta {
+  background-color: var(--hjalta-gold);
+  color: var(--hjalta-dark);
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: #d8a907;
+  color: var(--hjalta-black);
+}
+
+.feature-section {
+  padding: 60px 20px;
+  background-color: var(--hjalta-white);
+}
+
+.feature-box {
+  margin-bottom: 40px;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--hjalta-gold);
+  margin-bottom: 10px;
+}
+
+.add-on-box {
+  background-color: var(--hjalta-cream);
+  border-left: 4px solid var(--hjalta-gold);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
