@@ -121,6 +121,14 @@ main {
   flex-grow: 1;
   align-items: center;
 }
+
+.trainer-card:hover .short-desc {
+  display: none;
+}
+
+.trainer-card:hover .full-desc {
+  display: block;
+}
 /* ===== Hero Section ===== */
 .hjalta-hero-personal-training {
   
