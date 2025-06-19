@@ -56,15 +56,26 @@ body {
 }
 
 .btn-cta {
-  background-color: var(--hjalta-gold);
+  background-color: rgba(255, 255, 255, 0.1); /* fondo semitransparente */
   color: var(--hjalta-dark);
   border: none;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  max-width: 600px;
+  width: 100%;
 }
 
 .btn-cta:hover {
-  background-color: #d8a907;
+  background-color: rgba(255, 255, 255, 0.2);
   color: var(--hjalta-black);
+  box-shadow: 0 0 12px #efb90a, 0 0 24px #efb90a;
+  text-decoration: none;
 }
+
 
 .feature-section {
   padding: 60px 20px;
