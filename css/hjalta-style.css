@@ -56,7 +56,7 @@ body {
 }
 
 .btn-cta {
-  background-color: rgba(255, 255, 255, 0.1); /* fondo semitransparente */
+  background-color: #EFB90A !important  ; 
   color: var(--hjalta-dark);
   border: none;
   border-radius: 12px;
