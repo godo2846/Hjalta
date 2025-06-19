@@ -11,8 +11,11 @@ body {
   background-color: var(--hjalta-cream);
   color: var(--hjalta-dark);
   font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Hero Section */
 .hero-section {
   background-size: cover;
   background-position: center;
@@ -23,7 +26,7 @@ body {
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  inset: 0; /* más limpio que top/left/right/bottom */
   z-index: 1;
 }
 
@@ -32,11 +35,12 @@ body {
   z-index: 2;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: 16px;
   max-width: 800px;
   margin: auto;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: fadeInUp 0.8s ease forwards;
 }
@@ -47,6 +51,7 @@ body {
   font-size: 1.25rem;
   color: var(--hjalta-gold);
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 .hero-title {
@@ -55,28 +60,42 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Call-to-Action Button */
 .btn-cta {
-  background-color: #EFB90A !important  ; 
+  background-color: var(--hjalta-gold) !important;
   color: var(--hjalta-dark);
   border: none;
   border-radius: 12px;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   display: inline-block;
   max-width: 600px;
   width: 100%;
+  padding: 20px 24px;
+  text-align: center;
 }
 
 .btn-cta:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--hjalta-black);
-  box-shadow: 0 0 12px #efb90a, 0 0 24px #efb90a;
+  box-shadow: 0 0 12px var(--hjalta-gold), 0 0 24px var(--hjalta-gold);
   text-decoration: none;
 }
 
+/* Button content */
+.btn-cta h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
 
+.btn-cta p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Feature Section */
 .feature-section {
   padding: 60px 20px;
   background-color: var(--hjalta-white);
@@ -92,6 +111,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Add-on Box */
 .add-on-box {
   background-color: var(--hjalta-cream);
   border-left: 4px solid var(--hjalta-gold);
@@ -99,6 +119,7 @@ body {
   border-radius: 8px;
 }
 
+/* Animations */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -110,25 +131,16 @@ body {
   }
 }
 
+/* Responsive adjustments */
 
-/* Responsive typography and spacing */
-.btn-cta h5 {
-  font-size: 1.25rem; /* 20px */
-}
-
-.btn-cta p {
-  font-size: 0.95rem;
-  margin: 0;
-}
-
-/* 📱 Para pantallas pequeñas (teléfonos) */
+/* 📱 Small screens (phones) */
 @media (max-width: 576px) {
   .btn-cta {
     padding: 16px 18px;
   }
 
   .btn-cta h5 {
-    font-size: 1.1rem; /* 17.6px */
+    font-size: 1.1rem;
   }
 
   .btn-cta p {
@@ -136,7 +148,7 @@ body {
   }
 }
 
-/* 💻 Para pantallas medianas (tablets) */
+/* 💻 Medium screens (tablets) */
 @media (min-width: 577px) and (max-width: 991px) {
   .btn-cta {
     padding: 18px 20px;
