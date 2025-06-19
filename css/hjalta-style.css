@@ -109,3 +109,44 @@ body {
     transform: translateY(0);
   }
 }
+
+
+/* Responsive typography and spacing */
+.btn-cta h5 {
+  font-size: 1.25rem; /* 20px */
+}
+
+.btn-cta p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* 📱 Para pantallas pequeñas (teléfonos) */
+@media (max-width: 576px) {
+  .btn-cta {
+    padding: 16px 18px;
+  }
+
+  .btn-cta h5 {
+    font-size: 1.1rem; /* 17.6px */
+  }
+
+  .btn-cta p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 💻 Para pantallas medianas (tablets) */
+@media (min-width: 577px) and (max-width: 991px) {
+  .btn-cta {
+    padding: 18px 20px;
+  }
+
+  .btn-cta h5 {
+    font-size: 1.2rem;
+  }
+
+  .btn-cta p {
+    font-size: 0.9rem;
+  }
+}
