@@ -37,7 +37,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding: 40px;
-  border-radius: 16px;
+  border-radius: 1000px;
   max-width: 800px;
   margin: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -93,6 +93,141 @@ body {
 .btn-cta p {
   font-size: 0.95rem;
   margin: 0;
+}
+/* Card Slider Section */
+.swiper.cardSwiper {
+            padding: 2rem 0;
+            }
+
+            .swiper-slide {
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            }
+
+            .slider-card {
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            transition: transform 0.4s ease-in-out;
+            }
+
+            .slider-card:hover {
+            transform: scale(1.02);
+            }
+
+            .slider-content {
+            background: rgba(0, 0, 0, 0.45);
+            color: white;
+            padding: 1.2rem 1rem;
+            width: 100%;
+            backdrop-filter: blur(5px);
+            }
+
+            .slider-content .subtitle {
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 0.4rem;
+            color: white;
+            }
+
+            .slider-content .highlight {
+            color: #EFB90A;
+            }
+
+            .slider-content p {
+            font-size: 0.88rem;
+            margin-bottom: 1rem;
+            }
+
+            .btn-slider {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0.45rem 1rem;
+            background-color: #EFB90A;
+            color: #2b2e31;
+            font-weight: 600;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: background-color 0.3s ease;
+            }
+
+            .btn-slider i {
+            font-size: 1.1rem;
+            }
+
+            .btn-slider:hover {
+            background-color: #cfa100;
+            }
+
+            /* Modal Container */
+/* Modal Container */
+.modal-content {
+  background-color: #F6F4E6 !important; /* Crema */
+  border-radius: 20px;
+  border: 2px solid #EFB90A !important; /* Amarillo */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  padding: 1.5rem;
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+  align-items: center;
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #52575D !important; /* Gris oscuro */
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 1rem;
+  color: #52575D;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* Close Button */
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #52575D;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Optional: Fade backdrop */
+.modal-backdrop.show {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-title {
+    font-size: 1.25rem;
+  }
+
+  .modal-body {
+    font-size: 0.95rem;
+  }
 }
 
 /* Feature Section */
