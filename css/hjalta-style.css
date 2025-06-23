@@ -148,8 +148,8 @@ body {
             align-items: center;
             gap: 6px;
             padding: 0.45rem 1rem;
-            background-color: #EFB90A;
-            color: #2b2e31;
+            background-color: #EFB90A !important;
+            color: #2b2e31 !important;
             font-weight: 600;
             border-radius: 999px;
             text-decoration: none;
@@ -162,7 +162,7 @@ body {
             }
 
             .btn-slider:hover {
-            background-color: #cfa100;
+            background-color: #cfa100 !important;
             }
 
             /* Modal Container */
@@ -198,7 +198,7 @@ body {
 
 /* Close Button */
 .btn-close {
-  background-color: transparent;
+  background-color: transparent !important;
   border: none;
   font-size: 1.2rem;
   color: #52575D;
