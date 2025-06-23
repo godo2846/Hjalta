@@ -94,7 +94,7 @@
         <div class="slider-content">
           <h5 class="subtitle text-uppercase">| <span class="highlight">PERSONAL TRAINER AT YOUR LOCATION</span></h5>
           <p>Get expert coaching at your home, gym, or outdoor space—wherever suits you best.</p>
-          <a href="#" class="btn-slider">EXPLORE MORE <i class="bi bi-arrow-right-circle-fill"></i></a>
+          <a href="./carusel1.html" class="btn-slider">EXPLORE MORE <i class="bi bi-arrow-right-circle-fill"></i></a>
         </div>
       </div>
     </div>
@@ -118,7 +118,19 @@
         </div>
       </div>
     </div>
+
     <!-- Card 4 -->
+    <div class="swiper-slide">
+      <div class="slider-card" style="background-image: url('./assets/img/carusel4.jpg');">
+        <div class="slider-content">
+          <h5 class="subtitle text-uppercase">| <span class="highlight">FEEL CONNECTED</span></h5>
+          <p>Join a powerful community through group training, events, and retreats.</p>
+          <a href="#" class="btn-slider">EXPLORE MORE <i class="bi bi-arrow-right-circle-fill"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
     <div class="swiper-slide">
       <div class="slider-card" style="background-image: url('./assets/img/RecallAlliance\ -\ GoldBadge.png');">
         <div class="slider-content">
@@ -129,19 +141,20 @@
         </div>
       </div>
     </div>
+    
   </div>
 
   <!-- Swiper Controls -->
-  <div class="swiper-pagination"></div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
+<div class="swiper-pagination"></div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
 </div>
 
 <!-- Swiper Script -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>
   const swiper = new Swiper(".cardSwiper", {
-    loop: true,
+    loop: false, // Disable infinite loop to prevent repetition and stuck navigation
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
@@ -166,6 +179,7 @@
     },
   });
 </script>
+
 
 
 
