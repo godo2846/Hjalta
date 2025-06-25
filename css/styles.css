@@ -15,7 +15,7 @@ html, body {
 }
 
 .wrapper {
-  min-height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -131,6 +131,8 @@ main {
   display: block;
 }
 /* ===== Hero Section ===== */
+
+
 .hjalta-hero-personal-training {
   
   color: #2b2e31;
@@ -328,12 +330,21 @@ main {
   object-fit: cover;
 }
 
+.contact-section {
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
 /* ===== Footer ===== */
 .hjalta-footer {
   background-color: var(--hjalta-dark);
   color: var(--hjalta-white);
   padding: 60px 0 20px;
   margin-top: 80px;
+  position: relative;
+  z-index: 2;
+  margin-top: 0;
 }
 
 .footer-logo {
@@ -598,5 +609,64 @@ main {
 @media (min-width: 992px) {
   .book-btn-wrapper {
     justify-content: start;
+  }
+}
+
+/* Corrección para la superposición del formulario */
+main.contact-section {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 150px; /* Espacio extra para el footer */
+  background-color: var(--hjalta-cream);
+}
+
+.hjalta-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: -100px; /* Trae el footer hacia arriba */
+  padding-top: 100px; /* Compensación para el contenido */
+  background-color: var(--hjalta-dark);
+}
+
+/* Contenedor del formulario */
+.contact-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+  main.contact-section {
+    padding-bottom: 120px;
+  }
+  
+  .hjalta-footer {
+    margin-top: -80px;
+    padding-top: 80px;
+  }
+}/* Añade esto a tu archivo CSS */
+#contactFormContainer {
+  position: relative;
+  z-index: 10; /* Valor alto para asegurar que esté sobre el footer */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Espacio para el footer */
+}
+
+.hjalta-footer {
+  position: relative;
+  z-index: 2;
+  margin-top: -80px; /* Compensa el margen del formulario */
+  padding-top: 80px;
+  background-color: var(--hjalta-dark);
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  #contactFormContainer {
+    margin-bottom: 80px;
+  }
+  .hjalta-footer {
+    margin-top: -60px;
+    padding-top: 60px;
   }
 }

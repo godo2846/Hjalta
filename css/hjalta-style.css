@@ -96,28 +96,29 @@ body {
 }
 /* Card Slider Section */
 .swiper.cardSwiper {
-            padding: 2rem 0;
-            }
+  height: 400px; /* Aumenta la altura */
+  padding: 20px 0;
+}
 
-            .swiper-slide {
-            border-radius: 18px;
-            overflow: hidden;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-            }
+.slider-card {
+  height: 350px; /* Altura fija para las cards */
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+}
 
-            .slider-card {
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            display: flex;
-            align-items: flex-end;
-            transition: transform 0.4s ease-in-out;
-            }
+.slider-card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.4s ease-in-out;
+}
 
-            .slider-card:hover {
-            transform: scale(1.02);
-            }
+.slider-card:hover {
+  transform: scale(1.02);
+}
 
             .slider-content {
             background: rgba(0, 0, 0, 0.45);
@@ -163,7 +164,7 @@ body {
 
             .btn-slider:hover {
             background-color: #cfa100 !important;
-            }
+            }           
 
             /* Modal Container */
 /* Modal Container */
