@@ -663,7 +663,8 @@ main.contact-section {
 /* Ajuste para móviles */
 @media (max-width: 768px) {
   #contactFormContainer {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px; /* Espacio para el footer */
   }
   .hjalta-footer {
     margin-top: -60px;
