@@ -341,7 +341,7 @@ main {
   background-color: var(--hjalta-dark);
   color: var(--hjalta-white);
   padding: 60px 0 20px;
-  margin-top: 80px;
+  margin-top: 200px;
   position: relative;
   z-index: 2;
   margin-top: 0;
@@ -641,7 +641,7 @@ main.contact-section {
   }
   
   .hjalta-footer {
-    margin-top: -80px;
+    margin-top: 80px;
     padding-top: 80px;
   }
 }/* Añade esto a tu archivo CSS */

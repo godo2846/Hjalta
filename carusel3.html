@@ -64,9 +64,7 @@
           </p>
         </div>
         <div class="book-btn-wrapper">
-          <a href="./contact.html" class="btn btn-warning btn-lg mt-4 px-4 py-2 text-uppercase fw-semibold" style="background-color: #EFB90A; color: #52575D; border: none;">
-            Discover Wellbeing <i class="bi bi-arrow-right-circle ms-2"></i>
-          </a>
+          
         </div>
       </div>
       <div class="col-lg-6 order-1 order-lg-2 text-center mb-4 mb-lg-0">
@@ -74,6 +72,206 @@
       </div>
     </div>
   </div>
+  <!-- FORMULARIO -->
+<section class="contact-section" style="background-color: #F6F4E6;">
+  <div class="container" id="contactFormContainer">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="p-4 p-md-5 rounded-4 shadow-sm" style="background-color: white; border-left: 5px solid #EFB90A;">
+
+          <h4 class="fw-bold mt-4 mb-3" style="color: #52575D;">📩 Contact us!</h4>
+          <p style="color: #52575D;">Tell us what you’re looking for...</p>
+
+          <form id="contactForm">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input type="text" class="form-control py-3" name="firstName" placeholder="First Name" required style="background-color: #F6F4E6; border-color: #52575D;">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control py-3" name="lastName" placeholder="Last Name" required style="background-color: #F6F4E6; border-color: #52575D;">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control py-3" name="email" placeholder="Email Address" required style="background-color: #F6F4E6; border-color: #52575D;">
+              </div>
+              <div class="col-md-6">
+                <select name="gender" class="form-select py-3" required style="background-color: #F6F4E6; border-color: #52575D;">
+                  <option value="">Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <!-- Emiratos -->
+              <div class="col-md-6">
+                <select id="location" name="location" class="form-select py-3" required style="background-color: #F6F4E6; border-color: #52575D;">
+                  <option value="">Select a Location</option>
+                  <option value="Abu Dhabi">Abu Dhabi</option>
+                  <option value="Dubai">Dubai</option>
+                  <option value="Sharjah">Sharjah</option>
+                  <option value="Ajman">Ajman</option>
+                  <option value="Umm Al Quwain">Umm Al Quwain</option>
+                  <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                  <option value="Fujairah">Fujairah</option>
+                </select>
+              </div>
+
+              <!-- Áreas -->
+              <div class="col-md-6" id="areaContainer" style="display: none;">
+                <select id="area" name="area" class="form-select py-3 select-area" style="background-color: #F6F4E6; border-color: #52575D;">
+                  <option value="">Select an Area</option>
+                </select>
+              </div>
+
+              <!-- Objetivo -->
+              <div class="col-12">
+                <label class="form-label fw-semibold mt-2" style="color: #52575D;">Tell us about your goal (optional)</label>
+                <div class="d-flex flex-wrap gap-3">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goal" value="Lose weight" id="goalWeight">
+                    <label class="form-check-label" for="goalWeight">Lose weight</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goal" value="Improve health" id="goalHealth">
+                    <label class="form-check-label" for="goalHealth">Improve my health</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goal" value="Build muscle" id="goalMuscle">
+                    <label class="form-check-label" for="goalMuscle">Build muscle</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="goal" value="Not sure" id="goalNotSure">
+                    <label class="form-check-label" for="goalNotSure">I'm not sure</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <input type="tel" class="form-control py-3 mt-3" name="phone" placeholder="Phone" style="background-color: #F6F4E6; border-color: #52575D;">
+              </div>
+
+              <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-warning btn-lg w-100 py-3 fw-bold text-uppercase" style="color: #52575D; border: none;">
+                  Enquire Now!
+                </button>
+                <small class="d-block mt-2 text-center" style="color: #52575D;">
+                  By clicking 'Enquire Now!' I have read and understood the <a href="#" class="text-decoration-underline">privacy policy</a> and <a href="#" class="text-decoration-underline">terms and conditions</a>.
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center" style="background-color: #F6F4E6; border: 2px solid #EFB90A;">
+      <div class="modal-header border-0">
+        <h5 class="modal-title w-100 fw-bold fs-3" id="thankYouModalLabel" style="color: #52575D;">Thank You!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body fs-5 fw-medium" style="color: #52575D;">
+        We’ll get back to you the soonest possible. <br>
+        <span class="d-block mt-2">Your time — and energy — is sacred to us.</span>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <button type="button" class="btn px-4 py-2 fw-bold" style="background-color: #EFB90A; color: #52575D;" data-bs-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const emirateSelect = document.getElementById('location');
+    const areaSelect = document.getElementById('area');
+    const areaContainer = document.getElementById('areaContainer');
+
+    const emirateAreas = {
+      "Abu Dhabi": ["Al Reem Island", "Khalifa City", "Mohammed Bin Zayed City", "Al Mushrif", "Al Raha", "Saadiyat Island", "Yas Island", "Al Khalidiyah", "Al Bateen", "Corniche", "Al Shahama", "Al Bahia"],
+      "Dubai": ["Downtown Dubai", "Dubai Marina", "Palm Jumeirah", "Deira", "Bur Dubai", "Jumeirah", "Business Bay", "Al Barsha", "Al Quoz", "Mirdif", "Dubai Silicon Oasis", "International City", "JLT", "JVC", "Al Nahda", "Dubai Creek Harbour"],
+      "Sharjah": ["Al Majaz", "Al Khan", "Al Nahda", "Muwaileh", "Al Qasimia", "Al Taawun", "Al Nabba", "Al Yarmook", "Al Fisht", "Industrial Area"],
+      "Ajman": ["Al Rashidiya", "Al Nuaimiya", "Al Mowaihat", "Al Jurf", "Al Rawda", "Helio", "Al Hamidiyah"],
+      "Umm Al Quwain": ["Al Raas", "Al Salamah", "Falaj Al Mualla", "Umm Al Quwain Marina", "Al Dar Al Baida"],
+      "Ras Al Khaimah": ["Al Hamra", "Al Nakheel", "Al Dhait", "Julphar", "Al Rams", "Al Mataf", "Seih Al Uraibi", "Khozam", "Al Uraibi"],
+      "Fujairah": ["Fujairah City", "Dibba", "Masafi", "Al Faseel", "Sakamkam", "Mirbah", "Qidfa", "Al Bidya"]
+    };
+
+    emirateSelect.addEventListener('change', function () {
+      const selected = this.value;
+      areaSelect.innerHTML = '<option value="">Select an Area</option>';
+      areaSelect.required = false;
+
+      if (emirateAreas[selected]) {
+        emirateAreas[selected].forEach(area => {
+          const option = document.createElement('option');
+          option.value = area;
+          option.textContent = area;
+          areaSelect.appendChild(option);
+        });
+
+        areaContainer.style.display = 'block';
+        areaSelect.required = true;
+
+        refreshAreaSelect();
+      } else {
+        areaContainer.style.display = 'none';
+        areaSelect.required = false;
+        $('.select-area').select2('destroy');
+      }
+    });
+
+    function refreshAreaSelect() {
+      if ($('.select-area').hasClass("select2-hidden-accessible")) {
+        $('.select-area').select2('destroy');
+      }
+      $('.select-area').select2({
+        width: '100%',
+        placeholder: "Select an Area"
+      });
+    }
+
+    // FORM SUBMIT
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+
+      fetch("https://formsubmit.co/ajax/info@hjalta.com", {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+            thankYouModal.show();
+            form.reset();
+            areaContainer.style.display = 'none';
+            $('.select-area').val(null).trigger('change');
+
+            document.getElementById('thankYouModal').addEventListener('hidden.bs.modal', () => {
+              window.location.href = "index.html";
+            });
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        })
+        .catch(error => {
+          alert("There was a problem submitting your message.");
+        });
+    });
+  });
+</script>
 </main>
 
 <footer class="hjalta-footer">
