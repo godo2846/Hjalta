@@ -14,13 +14,17 @@ html, body {
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
-.modal-content {
-      background-color: #F6F4E6;
-      border-left: 6px solid #EFB90A;
-      border-radius: 20px;
-      overflow: hidden;
-      position: relative;
-    }
+.modal-content-pop {
+  background-color: rgba(246, 244, 230, 0.9); /* Base #F6F4E6 con transparencia */
+  border-left: 6px solid #EFB90A;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  backdrop-filter: none; /* sin blur */
+}
+
+
+
 
     .modal-video-container {
       position: relative;
@@ -42,7 +46,7 @@ html, body {
       border-radius: 30px;
       font-size: 0.9rem;
       cursor: pointer;
-      color: #52575D;
+      color: #e0ad09 !important;
       transition: background-color 0.3s;
       z-index: 10;
     }
