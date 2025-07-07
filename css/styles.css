@@ -65,7 +65,6 @@ html, body {
 
     .btn-close {
      filter: invert(41%) sepia(98%) saturate(719%) hue-rotate(20deg) brightness(100%) contrast(97%) !important;
-
      z-index: 20 !important;
     }
 
