@@ -14,6 +14,86 @@ html, body {
   font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
 }
 
+.modal-content {
+      background-color: #F6F4E6;
+      border-left: 6px solid #EFB90A;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .modal-video-container {
+      position: relative;
+      width: 100%;
+    }
+
+    .modal-video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .sound-toggle {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background-color: rgba(255, 255, 255, 0.75);
+      padding: 6px 10px;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      color: #52575D;
+      transition: background-color 0.3s;
+      z-index: 10;
+    }
+
+    .sound-toggle:hover {
+      background-color: #EFB90A;
+      color: #fff;
+    }
+
+    .btn-custom {
+      background-color: #EFB90A !important;
+      color: #52575D;
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #d4a809;
+    }
+
+    .btn-close {
+     filter: invert(41%) sepia(98%) saturate(719%) hue-rotate(20deg) brightness(100%) contrast(97%) !important;
+
+     z-index: 20 !important;
+    }
+
+
+    @media (max-width: 576px) {
+      h3 {
+        font-size: 1rem;
+      }
+
+      .sound-toggle {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+      }
+
+      .btn-custom {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+
+      .modal-dialog {
+        margin: 1rem;
+      }
+    }
+
+    .modal-backdrop.show {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
 .wrapper {
   flex: 1;
   display: flex;
