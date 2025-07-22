@@ -1,3 +1,27 @@
+/* Reset y estilos base */
+:root {
+    --primary-color: #2a4365; /* Azul oscuro profesional */
+    --secondary-color: #e53e3e; /* Rojo para énfasis */
+    --text-color: #333;
+    --light-gray: #f7fafc;
+    --medium-gray: #e2e8f0;
+    --dark-gray: #4a5568;
+    --font-main: 'Open Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-gray);
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
