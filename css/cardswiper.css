@@ -1,14 +1,16 @@
 /* ===== Swiper Card Section ===== */
 .cardSwiper {
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   position: relative;
   background-color: #F6F4E6;
 }
 
 .slider-card {
   height: 400px;
-  border-radius: 15px;
+  border-radius: 25px;
   overflow: hidden;
   position: relative;
   background-size: cover;
