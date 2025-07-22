@@ -1,0 +1,137 @@
+/* Hero Section Styles */
+.hero-section {
+    min-height: 80vh; /* Full viewport height */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel Background Styles */
+#heroCarousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure it stays behind the content */
+}
+
+#heroCarousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+}
+
+#heroCarousel .carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+#heroCarousel .carousel-item img {
+    width: 90%;
+    height: 100%;
+    object-fit: contain;
+    object-position: cover;
+    object-position: 40% 20%; /* Center the image vertically */
+    max-height: 80vh; /* Limit height to avoid overflow */
+    filter: brightness(0.8); /* Darken images slightly for better text contrast */
+}
+
+/* Content Container Styles */
+.hero-section .container {
+    position: relative;
+    z-index: 2; /* Above the carousel */
+    margin: 0 auto;
+    animation: fadeInUp 0.8s ease-out;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Fix for backdrop-filter */
+.hero-section .container {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Text Styles */
+.hero-section h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .lead {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styles */
+.btn-cta {
+    background: linear-gradient(135deg, #ffc107, #ff9800);
+    color: #000 !important;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+    display: inline-block;
+}
+
+.btn-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-section h1 {
+        font-size: 2.8rem;
+    }
+    
+    .hero-section .container {
+        width: 90%;
+        padding: 2.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-section .lead {
+        font-size: 1.1rem;
+    }
+    
+    .hero-section .container {
+        padding: 2rem !important;
+    }
+    
+    .btn-cta h5 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        min-height: 90vh;
+    }
+    
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-section .container {
+        padding: 1.5rem !important;
+    }
+}

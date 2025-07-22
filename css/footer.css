@@ -1,0 +1,171 @@
+/* ===== Footer Styles ===== */
+.hjalta-footer {
+  background-color: var(--hjalta-dark);
+  color: var(--hjalta-white);
+  padding: 4rem 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-logo {
+  height: 70px;
+  width: auto;
+  margin-bottom: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.05);
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.1rem;
+}
+
+.footer-heading {
+  color: var(--hjalta-gold);
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--hjalta-gold);
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.footer-contact i {
+  color: var(--hjalta-gold);
+  font-size: 1.1rem;
+  margin-top: 3px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1.5rem;
+}
+
+.social-icon {
+  color: var(--hjalta-white);
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: rgba(239, 185, 10, 0.1);
+}
+
+.social-icon:hover {
+  color: var(--hjalta-gold);
+  transform: translateY(-3px);
+  background-color: rgba(239, 185, 10, 0.3);
+}
+
+.download-text {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  color: var(--hjalta-gold);
+}
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.download-btn img {
+  height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.download-btn:hover img {
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.legal-links {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.legal-link {
+  color: var(--hjalta-gold) !important;
+  transition: opacity 0.3s ease;
+}
+
+.legal-link:hover {
+  opacity: 0.8;
+  text-decoration: underline !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hjalta-footer {
+    padding: 3rem 0 1rem;
+  }
+  
+  .footer-logo {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+  
+  .download-buttons {
+    justify-content: center;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .social-icons {
+    justify-content: center;
+  }
+  
+  .download-btn img {
+    height: 36px;
+  }
+}

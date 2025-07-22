@@ -1,18 +1,4 @@
-/* ===== Variables ===== */
-:root {
-  --hjalta-dark: #52575D;
-  --hjalta-gold: #EFB90A;
-  --hjalta-cream: #F6F4E6;
-  --hjalta-black: #2b2e31;
-  --hjalta-white: #ffffff;
-}
-/* ===== Base Styles ===== */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-}
+
 
 .modal-content-pop {
   background-color: rgba(246, 244, 230, 0.9); /* Base #F6F4E6 con transparencia */
@@ -22,80 +8,6 @@ html, body {
   position: relative;
   backdrop-filter: none; /* sin blur */
 }
-
-
-
-
-    .modal-video-container {
-      position: relative;
-      width: 100%;
-    }
-
-    .modal-video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .sound-toggle {
-      position: absolute;
-      bottom: 10px;
-      left: 10px;
-      background-color: rgba(255, 255, 255, 0.75);
-      padding: 6px 10px;
-      border-radius: 30px;
-      font-size: 0.9rem;
-      cursor: pointer;
-      color: #e0ad09 !important;
-      transition: background-color 0.3s;
-      z-index: 10;
-    }
-
-    .sound-toggle:hover {
-      background-color: #EFB90A;
-      color: #fff;
-    }
-
-    .btn-custom {
-      background-color: #EFB90A !important;
-      color: #52575D;
-      font-weight: bold;
-      border: none;
-    }
-
-    .btn-custom:hover {
-      background-color: #d4a809;
-    }
-
-    .btn-close {
-     filter: invert(41%) sepia(98%) saturate(719%) hue-rotate(20deg) brightness(100%) contrast(97%) !important;
-     z-index: 20 !important;
-    }
-
-
-    @media (max-width: 576px) {
-      h3 {
-        font-size: 1rem;
-      }
-
-      .sound-toggle {
-        font-size: 0.75rem;
-        padding: 4px 8px;
-      }
-
-      .btn-custom {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-      }
-
-      .modal-dialog {
-        margin: 1rem;
-      }
-    }
-
-    .modal-backdrop.show {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
 
 .wrapper {
   flex: 1;
@@ -112,99 +24,11 @@ main {
 }
 
 /* ===== Header/Navbar ===== */
-.hjalta-header {
-  background-color: var(--hjalta-dark);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
-.navbar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-  border-radius: 25px;
-}
 
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 2rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
 
-.hjalta-logo {
-  height: 60px;
-  transition: transform 0.3s ease;
-}
 
-.hjalta-logo:hover {
-  transform: scale(1.05);
-}
 
-.navbar-toggler {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: #EFB90A  !important;
-  border: 1px solid #F6F4E6  ;
-  border-radius: 0.25rem;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: var(--hjalta-gold) !important;
-  text-decoration: none;
-  transition: all 0.3s;
-  font-weight: 500;
-  font-size: 1.5rem;
-  border-radius: 4px;
-  position: relative;
-}
-
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.active {
-  color: var(--hjalta-dark) !important;
-  background-color: var(--hjalta-gold);
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 15px;
-  width: 0;
-  height: 2px;
-  background-color: var(--hjalta-gold);
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  width: calc(100% - 30px);
-}
-
-.navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-}
 
 .trainer-card:hover .short-desc {
   display: none;
@@ -362,171 +186,8 @@ main {
   margin: 2rem 0;
 }
 
-/* ===== Trainers Section ===== */
-.trainers-section {
-  background-color: #F6F4E6;
-  padding: 4rem 0;
-}
 
-.trainer-card {
-  transition: all 0.3s ease;
-  border-top: 4px solid #EFB90A;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  height: 100%;
-  text-align: center;
-}
 
-.trainer-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-
-.trainer-image {
-  transition: all 0.3s ease;
-  border: 3px solid #EFB90A;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #52575D;
-  color: white;
-  font-size: 4rem;
-}
-
-.trainer-card:hover .trainer-image {
-  transform: scale(1.05);
-}
-
-.carousel {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  margin-bottom: 3rem;
-}
-
-.carousel-item img {
-  height: 500px;
-  object-fit: cover;
-}
-
-.contact-section {
-  padding-bottom: 50px;
-  position: relative;
-  z-index: 1;
-}
-
-/* ===== Footer ===== */
-.hjalta-footer {
-  background-color: var(--hjalta-dark);
-  color: var(--hjalta-white);
-  padding: 60px 0 20px;
-  margin-top: 200px;
-  position: relative;
-  z-index: 2;
-  margin-top: 0;
-}
-
-.footer-logo {
-  height: 70px;
-  margin-bottom: 20px;
-}
-
-.footer-heading {
-  color: var(--hjalta-gold);
-  font-size: 1.3rem;
-  margin-bottom: 20px;
-  position: relative;
-  padding-bottom: 10px;
-}
-
-.footer-heading::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: var(--hjalta-gold);
-}
-
-.footer-contact {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-contact li {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-contact i {
-  color: var(--hjalta-gold);
-  font-size: 1.1rem;
-}
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.social-icon {
-  color: var(--hjalta-white);
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(239, 185, 10, 0.2);
-}
-
-.social-icon:hover {
-  color: var(--hjalta-gold);
-  transform: translateY(-3px);
-  background-color: rgba(239, 185, 10, 0.3);
-}
-
-.download-text {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: var(--hjalta-gold);
-}
-
-.download-buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.download-btn img {
-  height: 40px;
-  transition: transform 0.3s ease;
-}
-
-.download-btn:hover img {
-  transform: scale(1.05);
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.copyright {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin: 0;
-  
-}
 
 /* ===== Animations ===== */
 @keyframes fadeInUp {
@@ -753,4 +414,16 @@ main.contact-section {
     margin-top: -60px;
     padding-top: 60px;
   }
+}
+.modal-content.modal-content-pop {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content.modal-content-pop .container {
+  background-color: transparent !important;
 }

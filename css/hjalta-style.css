@@ -7,13 +7,6 @@
   --hjalta-white: #ffffff;
 }
 
-body {
-  background-color: var(--hjalta-cream);
-  color: var(--hjalta-dark);
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  padding: 0;
-}
 
 /* Hero Section */
 .hero-section {
