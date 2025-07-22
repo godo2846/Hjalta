@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-    min-height: 80vh; /* Full viewport height */
+    min-height: 100vh; /* Full viewport height */
     width: 100%;
     overflow: hidden;
     position: relative;
