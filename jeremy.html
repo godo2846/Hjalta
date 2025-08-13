@@ -176,7 +176,7 @@
             </div>
         </section>
 
-       <!-- FORMULARIO -->
+<!-- FORMULARIO -->
 <section class="contact-section" style="background-color: #F6F4E6;">
   <div class="container" id="contactFormContainer">
     <div class="row justify-content-center">
@@ -221,7 +221,7 @@
 
               <!-- Áreas -->
               <div class="col-md-6" id="areaContainer" style="display: none;">
-                <select id="area" name="area" class="form-select py-3 select-area" style="background-color: #F6F4E6; border-color: #52575D;">
+                <select id="area" name="area" class="form-select py-3" style="background-color: #F6F4E6; border-color: #52575D;">
                   <option value="">Select an Area</option>
                 </select>
               </div>
@@ -258,7 +258,7 @@
                   Enquire Now!
                 </button>
                 <small class="d-block mt-2 text-center" style="color: #52575D;">
-                  By clicking 'Enquire Now!' I have read and understood the <a href="./privacy.html" class="text-decoration-underline">privacy policy</a> and <a href="/terms.html" class="text-decoration-underline">terms and conditions</a>.
+                  By clicking 'Enquire Now!' I have read and understood the <a href="./privacy.html" class="text-decoration-underline">privacy policy</a> and <a href="./terms.html" class="text-decoration-underline">terms and conditions</a>.
                 </small>
               </div>
             </div>
@@ -290,91 +290,76 @@
   </div>
 </div>
 
-<!-- SCRIPT -->
+<!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const emirateSelect = document.getElementById('location');
-    const areaSelect = document.getElementById('area');
-    const areaContainer = document.getElementById('areaContainer');
+document.addEventListener("DOMContentLoaded", function () {
+  const emirateSelect = document.getElementById('location');
+  const areaSelect = document.getElementById('area');
+  const areaContainer = document.getElementById('areaContainer');
 
-    const emirateAreas = {
-      "Abu Dhabi": ["Al Reem Island", "Khalifa City", "Mohammed Bin Zayed City", "Al Mushrif", "Al Raha", "Saadiyat Island", "Yas Island", "Al Khalidiyah", "Al Bateen", "Corniche", "Al Shahama", "Al Bahia"],
-      "Dubai": ["Downtown Dubai", "Dubai Marina", "Palm Jumeirah", "Deira", "Bur Dubai", "Jumeirah", "Business Bay", "Al Barsha", "Al Quoz", "Mirdif", "Dubai Silicon Oasis", "International City", "JLT", "JVC", "Al Nahda", "Dubai Creek Harbour"],
-      "Sharjah": ["Al Majaz", "Al Khan", "Al Nahda", "Muwaileh", "Al Qasimia", "Al Taawun", "Al Nabba", "Al Yarmook", "Al Fisht", "Industrial Area"],
-      "Ajman": ["Al Rashidiya", "Al Nuaimiya", "Al Mowaihat", "Al Jurf", "Al Rawda", "Helio", "Al Hamidiyah"],
-      "Umm Al Quwain": ["Al Raas", "Al Salamah", "Falaj Al Mualla", "Umm Al Quwain Marina", "Al Dar Al Baida"],
-      "Ras Al Khaimah": ["Al Hamra", "Al Nakheel", "Al Dhait", "Julphar", "Al Rams", "Al Mataf", "Seih Al Uraibi", "Khozam", "Al Uraibi"],
-      "Fujairah": ["Fujairah City", "Dibba", "Masafi", "Al Faseel", "Sakamkam", "Mirbah", "Qidfa", "Al Bidya"]
-    };
+  const emirateAreas = {
+    "Abu Dhabi": ["Al Reem Island", "Khalifa City", "Mohammed Bin Zayed City", "Al Mushrif", "Al Raha", "Saadiyat Island", "Yas Island", "Al Khalidiyah", "Al Bateen", "Corniche", "Al Shahama", "Al Bahia"],
+    "Dubai": ["Downtown Dubai", "Dubai Marina", "Palm Jumeirah", "Deira", "Bur Dubai", "Jumeirah", "Business Bay", "Al Barsha", "Al Quoz", "Mirdif", "Dubai Silicon Oasis", "International City", "JLT", "JVC", "Al Nahda", "Dubai Creek Harbour"],
+    "Sharjah": ["Al Majaz", "Al Khan", "Al Nahda", "Muwaileh", "Al Qasimia", "Al Taawun", "Al Nabba", "Al Yarmook", "Al Fisht", "Industrial Area"],
+    "Ajman": ["Al Rashidiya", "Al Nuaimiya", "Al Mowaihat", "Al Jurf", "Al Rawda", "Helio", "Al Hamidiyah"],
+    "Umm Al Quwain": ["Al Raas", "Al Salamah", "Falaj Al Mualla", "Umm Al Quwain Marina", "Al Dar Al Baida"],
+    "Ras Al Khaimah": ["Al Hamra", "Al Nakheel", "Al Dhait", "Julphar", "Al Rams", "Al Mataf", "Seih Al Uraibi", "Khozam", "Al Uraibi"],
+    "Fujairah": ["Fujairah City", "Dibba", "Masafi", "Al Faseel", "Sakamkam", "Mirbah", "Qidfa", "Al Bidya"]
+  };
 
-    emirateSelect.addEventListener('change', function () {
-      const selected = this.value;
-      areaSelect.innerHTML = '<option value="">Select an Area</option>';
-      areaSelect.required = false;
+  emirateSelect.addEventListener('change', function () {
+    const selected = this.value;
+    areaSelect.innerHTML = '<option value="">Select an Area</option>';
 
-      if (emirateAreas[selected]) {
-        emirateAreas[selected].forEach(area => {
-          const option = document.createElement('option');
-          option.value = area;
-          option.textContent = area;
-          areaSelect.appendChild(option);
-        });
-
-        areaContainer.style.display = 'block';
-        areaSelect.required = true;
-
-        refreshAreaSelect();
-      } else {
-        areaContainer.style.display = 'none';
-        areaSelect.required = false;
-        $('.select-area').select2('destroy');
-      }
-    });
-
-    function refreshAreaSelect() {
-      if ($('.select-area').hasClass("select2-hidden-accessible")) {
-        $('.select-area').select2('destroy');
-      }
-      $('.select-area').select2({
-        width: '100%',
-        placeholder: "Select an Area"
+    if (emirateAreas[selected]) {
+      emirateAreas[selected].forEach(area => {
+        const option = document.createElement('option');
+        option.value = area;
+        option.textContent = area;
+        areaSelect.appendChild(option);
       });
+      areaContainer.style.display = 'block';
+      areaSelect.required = true;
+    } else {
+      areaContainer.style.display = 'none';
+      areaSelect.required = false;
     }
+  });
 
-    // FORM SUBMIT
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
+  // FORM SUBMIT
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-      const form = e.target;
-      const formData = new FormData(form);
+    const form = e.target;
+    const formData = new FormData(form);
 
-      fetch("https://formsubmit.co/ajax/info@hjalta.com", {
-        method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-        .then(response => {
-          if (response.ok) {
-            const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
-            thankYouModal.show();
-            form.reset();
-            areaContainer.style.display = 'none';
-            $('.select-area').val(null).trigger('change');
+    fetch("https://formsubmit.co/ajax/info@hjalta.com", {
+      method: "POST",
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        thankYouModal.show();
+        form.reset();
+        areaContainer.style.display = 'none';
 
-            document.getElementById('thankYouModal').addEventListener('hidden.bs.modal', () => {
-              window.location.href = "index.html";
-            });
-          } else {
-            alert("Something went wrong. Please try again.");
-          }
-        })
-        .catch(error => {
-          alert("There was a problem submitting your message.");
+        document.getElementById('thankYouModal').addEventListener('hidden.bs.modal', () => {
+          window.location.href = "index.html";
         });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    })
+    .catch(error => {
+      alert("There was a problem submitting your message.");
+      console.error(error);
     });
   });
+});
 </script>
       
               
